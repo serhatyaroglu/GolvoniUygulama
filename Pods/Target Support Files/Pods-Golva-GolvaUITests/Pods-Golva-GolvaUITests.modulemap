@@ -1,0 +1,6 @@
+framework module Pods_Golva_GolvaUITests {
+  umbrella header "Pods-Golva-GolvaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

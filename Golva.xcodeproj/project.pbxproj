@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7922681025C567FF000C845B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922680F25C567FF000C845B /* AppDelegate.swift */; };
+		7922681225C567FF000C845B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922681125C567FF000C845B /* SceneDelegate.swift */; };
+		7922681425C567FF000C845B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922681325C567FF000C845B /* ViewController.swift */; };
+		7922681725C567FF000C845B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7922681525C567FF000C845B /* Main.storyboard */; };
+		7922681A25C567FF000C845B /* Golva.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7922681825C567FF000C845B /* Golva.xcdatamodeld */; };
+		7922681C25C56800000C845B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7922681B25C56800000C845B /* Assets.xcassets */; };
+		7922681F25C56800000C845B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7922681D25C56800000C845B /* LaunchScreen.storyboard */; };
+		7922682A25C56800000C845B /* GolvaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922682925C56800000C845B /* GolvaTests.swift */; };
+		7922683525C56800000C845B /* GolvaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922683425C56800000C845B /* GolvaUITests.swift */; };
+		794EBB6E25C5AEB4007D9774 /* GolvaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794EBB6D25C5AEB4007D9774 /* GolvaInfo.swift */; };
+		794EBB7325C5AF93007D9774 /* Reguest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794EBB7225C5AF93007D9774 /* Reguest.swift */; };
+		794EBB7F25C5B618007D9774 /* person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794EBB7E25C5B618007D9774 /* person.swift */; };
+		7962272925D31E8C00EC001A /* TurEkleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7962272825D31E8C00EC001A /* TurEkleModel.swift */; };
+		799789EF25D267E900A24861 /* TurEkleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799789EE25D267E900A24861 /* TurEkleViewController.swift */; };
+		799789F425D2680200A24861 /* TurEkleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799789F325D2680200A24861 /* TurEkleCollectionViewCell.swift */; };
+		84120C7D1830A1FCB5AA7853 /* Pods_GolvaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB95E2B48A0A4887EB603D /* Pods_GolvaTests.framework */; };
+		84B7BBBF1D2B262CFFD67C40 /* Pods_Golva.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D20369344E05662120A666 /* Pods_Golva.framework */; };
+		8704DC2225C5728F0008FF34 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704DC2125C5728F0008FF34 /* DetailsTableViewCell.swift */; };
+		879AFF7A25D2741F0039F7DE /* istatistikViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AFF7925D2741F0039F7DE /* istatistikViewController.swift */; };
+		879AFF7F25D274590039F7DE /* istatistikCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AFF7E25D274590039F7DE /* istatistikCollectionViewCell.swift */; };
+		879AFF8425D31E800039F7DE /* istatistiketkinlik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879AFF8325D31E800039F7DE /* istatistiketkinlik.swift */; };
+		9EE829A3F0FF8A80F04D6D60 /* Pods_Golva_GolvaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911424EBE3AC2BF02B01A970 /* Pods_Golva_GolvaUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7922682625C56800000C845B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7922680425C567FF000C845B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7922680B25C567FF000C845B;
+			remoteInfo = Golva;
+		};
+		7922683125C56800000C845B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7922680425C567FF000C845B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7922680B25C567FF000C845B;
+			remoteInfo = Golva;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14D20369344E05662120A666 /* Pods_Golva.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Golva.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1554E91B66ACF219EB0C9078 /* Pods-Golva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golva.debug.xcconfig"; path = "Target Support Files/Pods-Golva/Pods-Golva.debug.xcconfig"; sourceTree = "<group>"; };
+		7544C78B51B862809DD7CC2F /* Pods-GolvaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolvaTests.debug.xcconfig"; path = "Target Support Files/Pods-GolvaTests/Pods-GolvaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7922680C25C567FF000C845B /* Golva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Golva.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7922680F25C567FF000C845B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7922681125C567FF000C845B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7922681325C567FF000C845B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7922681625C567FF000C845B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7922681925C567FF000C845B /* Golva.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Golva.xcdatamodel; sourceTree = "<group>"; };
+		7922681B25C56800000C845B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7922681E25C56800000C845B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7922682025C56800000C845B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7922682525C56800000C845B /* GolvaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolvaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7922682925C56800000C845B /* GolvaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolvaTests.swift; sourceTree = "<group>"; };
+		7922682B25C56800000C845B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7922683025C56800000C845B /* GolvaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolvaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7922683425C56800000C845B /* GolvaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolvaUITests.swift; sourceTree = "<group>"; };
+		7922683625C56800000C845B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794EBB6D25C5AEB4007D9774 /* GolvaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolvaInfo.swift; sourceTree = "<group>"; };
+		794EBB7225C5AF93007D9774 /* Reguest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reguest.swift; sourceTree = "<group>"; };
+		794EBB7E25C5B618007D9774 /* person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = person.swift; sourceTree = "<group>"; };
+		7962272825D31E8C00EC001A /* TurEkleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurEkleModel.swift; sourceTree = "<group>"; };
+		799789EE25D267E900A24861 /* TurEkleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurEkleViewController.swift; sourceTree = "<group>"; };
+		799789F325D2680200A24861 /* TurEkleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurEkleCollectionViewCell.swift; sourceTree = "<group>"; };
+		7BEE74FB3C77FFACFD88CC03 /* Pods-GolvaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolvaTests.release.xcconfig"; path = "Target Support Files/Pods-GolvaTests/Pods-GolvaTests.release.xcconfig"; sourceTree = "<group>"; };
+		8704DC2125C5728F0008FF34 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		879AFF7925D2741F0039F7DE /* istatistikViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = istatistikViewController.swift; sourceTree = "<group>"; };
+		879AFF7E25D274590039F7DE /* istatistikCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = istatistikCollectionViewCell.swift; sourceTree = "<group>"; };
+		879AFF8325D31E800039F7DE /* istatistiketkinlik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = istatistiketkinlik.swift; sourceTree = "<group>"; };
+		911424EBE3AC2BF02B01A970 /* Pods_Golva_GolvaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Golva_GolvaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99928B47FBFC03C0074DDF0F /* Pods-Golva-GolvaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golva-GolvaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Golva-GolvaUITests/Pods-Golva-GolvaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4CB95E2B48A0A4887EB603D /* Pods_GolvaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GolvaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC10CCA1908AF6A9A112536 /* Pods-Golva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golva.release.xcconfig"; path = "Target Support Files/Pods-Golva/Pods-Golva.release.xcconfig"; sourceTree = "<group>"; };
+		EA8BA079EB5DA8DD52FC93D4 /* Pods-Golva-GolvaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golva-GolvaUITests.release.xcconfig"; path = "Target Support Files/Pods-Golva-GolvaUITests/Pods-Golva-GolvaUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7922680925C567FF000C845B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7BBBF1D2B262CFFD67C40 /* Pods_Golva.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7922682225C56800000C845B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84120C7D1830A1FCB5AA7853 /* Pods_GolvaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7922682D25C56800000C845B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE829A3F0FF8A80F04D6D60 /* Pods_Golva_GolvaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18593B9F5EC401BBC06FDD31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1554E91B66ACF219EB0C9078 /* Pods-Golva.debug.xcconfig */,
+				BDC10CCA1908AF6A9A112536 /* Pods-Golva.release.xcconfig */,
+				99928B47FBFC03C0074DDF0F /* Pods-Golva-GolvaUITests.debug.xcconfig */,
+				EA8BA079EB5DA8DD52FC93D4 /* Pods-Golva-GolvaUITests.release.xcconfig */,
+				7544C78B51B862809DD7CC2F /* Pods-GolvaTests.debug.xcconfig */,
+				7BEE74FB3C77FFACFD88CC03 /* Pods-GolvaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7922680325C567FF000C845B = {
+			isa = PBXGroup;
+			children = (
+				7922680E25C567FF000C845B /* Golva */,
+				7922682825C56800000C845B /* GolvaTests */,
+				7922683325C56800000C845B /* GolvaUITests */,
+				7922680D25C567FF000C845B /* Products */,
+				18593B9F5EC401BBC06FDD31 /* Pods */,
+				E90766A415E7E592D0EC5270 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7922680D25C567FF000C845B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7922680C25C567FF000C845B /* Golva.app */,
+				7922682525C56800000C845B /* GolvaTests.xctest */,
+				7922683025C56800000C845B /* GolvaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7922680E25C567FF000C845B /* Golva */ = {
+			isa = PBXGroup;
+			children = (
+				7922680F25C567FF000C845B /* AppDelegate.swift */,
+				7922681125C567FF000C845B /* SceneDelegate.swift */,
+				794EBB7E25C5B618007D9774 /* person.swift */,
+				794EBB6D25C5AEB4007D9774 /* GolvaInfo.swift */,
+				794EBB7225C5AF93007D9774 /* Reguest.swift */,
+				7922681525C567FF000C845B /* Main.storyboard */,
+				879AFF7E25D274590039F7DE /* istatistikCollectionViewCell.swift */,
+				879AFF8325D31E800039F7DE /* istatistiketkinlik.swift */,
+				879AFF7925D2741F0039F7DE /* istatistikViewController.swift */,
+				799789EE25D267E900A24861 /* TurEkleViewController.swift */,
+				799789F325D2680200A24861 /* TurEkleCollectionViewCell.swift */,
+				7962272825D31E8C00EC001A /* TurEkleModel.swift */,
+				7922681325C567FF000C845B /* ViewController.swift */,
+				8704DC2125C5728F0008FF34 /* DetailsTableViewCell.swift */,
+				7922681B25C56800000C845B /* Assets.xcassets */,
+				7922681D25C56800000C845B /* LaunchScreen.storyboard */,
+				7922682025C56800000C845B /* Info.plist */,
+				7922681825C567FF000C845B /* Golva.xcdatamodeld */,
+			);
+			path = Golva;
+			sourceTree = "<group>";
+		};
+		7922682825C56800000C845B /* GolvaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7922682925C56800000C845B /* GolvaTests.swift */,
+				7922682B25C56800000C845B /* Info.plist */,
+			);
+			path = GolvaTests;
+			sourceTree = "<group>";
+		};
+		7922683325C56800000C845B /* GolvaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7922683425C56800000C845B /* GolvaUITests.swift */,
+				7922683625C56800000C845B /* Info.plist */,
+			);
+			path = GolvaUITests;
+			sourceTree = "<group>";
+		};
+		E90766A415E7E592D0EC5270 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14D20369344E05662120A666 /* Pods_Golva.framework */,
+				911424EBE3AC2BF02B01A970 /* Pods_Golva_GolvaUITests.framework */,
+				B4CB95E2B48A0A4887EB603D /* Pods_GolvaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7922680B25C567FF000C845B /* Golva */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7922683925C56800000C845B /* Build configuration list for PBXNativeTarget "Golva" */;
+			buildPhases = (
+				856D2A23ADB446DA5506FE79 /* [CP] Check Pods Manifest.lock */,
+				7922680825C567FF000C845B /* Sources */,
+				7922680925C567FF000C845B /* Frameworks */,
+				7922680A25C567FF000C845B /* Resources */,
+				775DADE76B609BB44D3F729C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Golva;
+			productName = Golva;
+			productReference = 7922680C25C567FF000C845B /* Golva.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7922682425C56800000C845B /* GolvaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7922683C25C56800000C845B /* Build configuration list for PBXNativeTarget "GolvaTests" */;
+			buildPhases = (
+				67A0BD2B826A5D0DE19D54B6 /* [CP] Check Pods Manifest.lock */,
+				7922682125C56800000C845B /* Sources */,
+				7922682225C56800000C845B /* Frameworks */,
+				7922682325C56800000C845B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7922682725C56800000C845B /* PBXTargetDependency */,
+			);
+			name = GolvaTests;
+			productName = GolvaTests;
+			productReference = 7922682525C56800000C845B /* GolvaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7922682F25C56800000C845B /* GolvaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7922683F25C56800000C845B /* Build configuration list for PBXNativeTarget "GolvaUITests" */;
+			buildPhases = (
+				4630D04C791BB2245F46A6DB /* [CP] Check Pods Manifest.lock */,
+				7922682C25C56800000C845B /* Sources */,
+				7922682D25C56800000C845B /* Frameworks */,
+				7922682E25C56800000C845B /* Resources */,
+				66410FCF458EB67D9617C6EA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7922683225C56800000C845B /* PBXTargetDependency */,
+			);
+			name = GolvaUITests;
+			productName = GolvaUITests;
+			productReference = 7922683025C56800000C845B /* GolvaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7922680425C567FF000C845B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7922680B25C567FF000C845B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					7922682425C56800000C845B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7922680B25C567FF000C845B;
+					};
+					7922682F25C56800000C845B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7922680B25C567FF000C845B;
+					};
+				};
+			};
+			buildConfigurationList = 7922680725C567FF000C845B /* Build configuration list for PBXProject "Golva" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7922680325C567FF000C845B;
+			productRefGroup = 7922680D25C567FF000C845B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7922680B25C567FF000C845B /* Golva */,
+				7922682425C56800000C845B /* GolvaTests */,
+				7922682F25C56800000C845B /* GolvaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7922680A25C567FF000C845B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7922681F25C56800000C845B /* LaunchScreen.storyboard in Resources */,
+				7922681C25C56800000C845B /* Assets.xcassets in Resources */,
+				7922681725C567FF000C845B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7922682325C56800000C845B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7922682E25C56800000C845B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4630D04C791BB2245F46A6DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Golva-GolvaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66410FCF458EB67D9617C6EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Golva-GolvaUITests/Pods-Golva-GolvaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Golva-GolvaUITests/Pods-Golva-GolvaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Golva-GolvaUITests/Pods-Golva-GolvaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67A0BD2B826A5D0DE19D54B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GolvaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		775DADE76B609BB44D3F729C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Golva/Pods-Golva-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Golva/Pods-Golva-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Golva/Pods-Golva-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		856D2A23ADB446DA5506FE79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Golva-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7922680825C567FF000C845B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7922681425C567FF000C845B /* ViewController.swift in Sources */,
+				794EBB6E25C5AEB4007D9774 /* GolvaInfo.swift in Sources */,
+				8704DC2225C5728F0008FF34 /* DetailsTableViewCell.swift in Sources */,
+				879AFF7A25D2741F0039F7DE /* istatistikViewController.swift in Sources */,
+				799789F425D2680200A24861 /* TurEkleCollectionViewCell.swift in Sources */,
+				7962272925D31E8C00EC001A /* TurEkleModel.swift in Sources */,
+				879AFF7F25D274590039F7DE /* istatistikCollectionViewCell.swift in Sources */,
+				7922681025C567FF000C845B /* AppDelegate.swift in Sources */,
+				799789EF25D267E900A24861 /* TurEkleViewController.swift in Sources */,
+				7922681225C567FF000C845B /* SceneDelegate.swift in Sources */,
+				879AFF8425D31E800039F7DE /* istatistiketkinlik.swift in Sources */,
+				7922681A25C567FF000C845B /* Golva.xcdatamodeld in Sources */,
+				794EBB7F25C5B618007D9774 /* person.swift in Sources */,
+				794EBB7325C5AF93007D9774 /* Reguest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7922682125C56800000C845B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7922682A25C56800000C845B /* GolvaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7922682C25C56800000C845B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7922683525C56800000C845B /* GolvaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7922682725C56800000C845B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7922680B25C567FF000C845B /* Golva */;
+			targetProxy = 7922682625C56800000C845B /* PBXContainerItemProxy */;
+		};
+		7922683225C56800000C845B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7922680B25C567FF000C845B /* Golva */;
+			targetProxy = 7922683125C56800000C845B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7922681525C567FF000C845B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7922681625C567FF000C845B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7922681D25C56800000C845B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7922681E25C56800000C845B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7922683725C56800000C845B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7922683825C56800000C845B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7922683A25C56800000C845B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1554E91B66ACF219EB0C9078 /* Pods-Golva.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z32CCHAS27;
+				INFOPLIST_FILE = Golva/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatyaroglu.Golva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7922683B25C56800000C845B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDC10CCA1908AF6A9A112536 /* Pods-Golva.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z32CCHAS27;
+				INFOPLIST_FILE = Golva/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatyaroglu.Golva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7922683D25C56800000C845B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7544C78B51B862809DD7CC2F /* Pods-GolvaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z32CCHAS27;
+				INFOPLIST_FILE = GolvaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatyaroglu.GolvaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Golva.app/Golva";
+			};
+			name = Debug;
+		};
+		7922683E25C56800000C845B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BEE74FB3C77FFACFD88CC03 /* Pods-GolvaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z32CCHAS27;
+				INFOPLIST_FILE = GolvaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatyaroglu.GolvaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Golva.app/Golva";
+			};
+			name = Release;
+		};
+		7922684025C56800000C845B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99928B47FBFC03C0074DDF0F /* Pods-Golva-GolvaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z32CCHAS27;
+				INFOPLIST_FILE = GolvaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatyaroglu.GolvaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Golva;
+			};
+			name = Debug;
+		};
+		7922684125C56800000C845B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8BA079EB5DA8DD52FC93D4 /* Pods-Golva-GolvaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z32CCHAS27;
+				INFOPLIST_FILE = GolvaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhatyaroglu.GolvaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Golva;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7922680725C567FF000C845B /* Build configuration list for PBXProject "Golva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7922683725C56800000C845B /* Debug */,
+				7922683825C56800000C845B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7922683925C56800000C845B /* Build configuration list for PBXNativeTarget "Golva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7922683A25C56800000C845B /* Debug */,
+				7922683B25C56800000C845B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7922683C25C56800000C845B /* Build configuration list for PBXNativeTarget "GolvaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7922683D25C56800000C845B /* Debug */,
+				7922683E25C56800000C845B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7922683F25C56800000C845B /* Build configuration list for PBXNativeTarget "GolvaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7922684025C56800000C845B /* Debug */,
+				7922684125C56800000C845B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7922681825C567FF000C845B /* Golva.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7922681925C567FF000C845B /* Golva.xcdatamodel */,
+			);
+			currentVersion = 7922681925C567FF000C845B /* Golva.xcdatamodel */;
+			path = Golva.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7922680425C567FF000C845B /* Project object */;
+}
