@@ -10,7 +10,6 @@ class TurEkle{
     var butonEtkinlikAdi:String?
     init(butonEtkinlikAdi:String) {
         self.butonEtkinlikAdi=butonEtkinlikAdi
-    
-    
+        print("hgf")
     }
 }
