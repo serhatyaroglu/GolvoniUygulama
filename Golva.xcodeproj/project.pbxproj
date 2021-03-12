@@ -16,7 +16,9 @@
 		7922681F25C56800000C845B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7922681D25C56800000C845B /* LaunchScreen.storyboard */; };
 		7922682A25C56800000C845B /* GolvaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922682925C56800000C845B /* GolvaTests.swift */; };
 		7922683525C56800000C845B /* GolvaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922683425C56800000C845B /* GolvaUITests.swift */; };
+		794EBB6E25C5AEB4007D9774 /* GolvaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794EBB6D25C5AEB4007D9774 /* GolvaInfo.swift */; };
 		794EBB7325C5AF93007D9774 /* Reguest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794EBB7225C5AF93007D9774 /* Reguest.swift */; };
+		794EBB7F25C5B618007D9774 /* person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794EBB7E25C5B618007D9774 /* person.swift */; };
 		7962272925D31E8C00EC001A /* TurEkleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7962272825D31E8C00EC001A /* TurEkleModel.swift */; };
 		799789EF25D267E900A24861 /* TurEkleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799789EE25D267E900A24861 /* TurEkleViewController.swift */; };
 		799789F425D2680200A24861 /* TurEkleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799789F325D2680200A24861 /* TurEkleCollectionViewCell.swift */; };
@@ -65,7 +67,9 @@
 		7922683025C56800000C845B /* GolvaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolvaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7922683425C56800000C845B /* GolvaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolvaUITests.swift; sourceTree = "<group>"; };
 		7922683625C56800000C845B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794EBB6D25C5AEB4007D9774 /* GolvaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolvaInfo.swift; sourceTree = "<group>"; };
 		794EBB7225C5AF93007D9774 /* Reguest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reguest.swift; sourceTree = "<group>"; };
+		794EBB7E25C5B618007D9774 /* person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = person.swift; sourceTree = "<group>"; };
 		7962272825D31E8C00EC001A /* TurEkleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurEkleModel.swift; sourceTree = "<group>"; };
 		799789EE25D267E900A24861 /* TurEkleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurEkleViewController.swift; sourceTree = "<group>"; };
 		799789F325D2680200A24861 /* TurEkleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurEkleCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 			children = (
 				7922680F25C567FF000C845B /* AppDelegate.swift */,
 				7922681125C567FF000C845B /* SceneDelegate.swift */,
+				794EBB7E25C5B618007D9774 /* person.swift */,
+				794EBB6D25C5AEB4007D9774 /* GolvaInfo.swift */,
 				794EBB7225C5AF93007D9774 /* Reguest.swift */,
 				7922681525C567FF000C845B /* Main.storyboard */,
 				879AFF7E25D274590039F7DE /* istatistikCollectionViewCell.swift */,
@@ -434,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7922681425C567FF000C845B /* ViewController.swift in Sources */,
+				794EBB6E25C5AEB4007D9774 /* GolvaInfo.swift in Sources */,
 				8704DC2225C5728F0008FF34 /* DetailsTableViewCell.swift in Sources */,
 				879AFF7A25D2741F0039F7DE /* istatistikViewController.swift in Sources */,
 				799789F425D2680200A24861 /* TurEkleCollectionViewCell.swift in Sources */,
@@ -444,6 +451,7 @@
 				7922681225C567FF000C845B /* SceneDelegate.swift in Sources */,
 				879AFF8425D31E800039F7DE /* istatistiketkinlik.swift in Sources */,
 				7922681A25C567FF000C845B /* Golva.xcdatamodeld in Sources */,
+				794EBB7F25C5B618007D9774 /* person.swift in Sources */,
 				794EBB7325C5AF93007D9774 /* Reguest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
