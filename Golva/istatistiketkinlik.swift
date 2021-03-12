@@ -22,5 +22,7 @@ class Modelleme {
         self.hafta = hafta
         self.ay = ay
         self.resim = resim
+        
+        print("araba")
     }
 }
