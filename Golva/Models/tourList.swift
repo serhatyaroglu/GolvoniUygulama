@@ -6,6 +6,8 @@
 //
 
 import Foundation
-class TourModel  {
-    
+class tourModel : Codable  {
+    var name : String?
+    var parkourName : String?
+    var fee : Int
 }

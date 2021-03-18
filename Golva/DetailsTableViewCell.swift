@@ -10,6 +10,7 @@ import UIKit
 class DetailsTableViewCell: UITableViewCell {
     
     
+    @IBOutlet weak var parkurname: UILabel!
     @IBOutlet weak var turAdiLabel: UILabel!
     
     @IBOutlet weak var turSaatiLabel: UILabel!
