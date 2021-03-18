@@ -23,10 +23,10 @@ class ViewController: UIViewController{
     @IBOutlet weak var ViewTab: UIView!
     @IBOutlet weak var SliderCollectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
-    var Contacts = [Contact]()
-    var apiResult : ApiResult? = nil
-    var dataList : [Contact] = [Contact]()
-    var originalArr = [Contact]();
+//    var Contacts = [Contact]()
+//    var apiResult : ApiResult? = nil
+//    var dataList : [Contact] = [Contact]()
+//    var originalArr = [Contact]();
     var sliderList = [Modelleme]()
     var tourApiList = [tourModel]()
     override func viewDidLoad() {
