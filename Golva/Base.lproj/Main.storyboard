@@ -91,7 +91,6 @@
                                                     <rect key="contentStretch" x="0.59999999999999998" y="0.0" width="1" height="1"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="300" id="9JN-EH-sRD"/>
-                                                        <constraint firstItem="GyZ-Vu-V1h" firstAttribute="top" secondItem="cfi-Ry-P4R" secondAttribute="top" constant="5" id="yYB-8o-P2Z"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
@@ -130,7 +129,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="sliderCell" id="bBO-q9-vDL" customClass="etkinlikDetaylariCollectionViewCell" customModule="Golva" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="sliderCell" id="bBO-q9-vDL">
                                                 <rect key="frame" x="2" y="0.0" width="410" height="339"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="bottom" semanticContentAttribute="spatial" insetsLayoutMarginsFromSafeArea="NO" id="mVm-cF-6gy">

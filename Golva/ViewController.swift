@@ -53,7 +53,7 @@ class ViewController: UIViewController{
                     decodeJSON.keyDecodingStrategy = .convertFromSnakeCase
                     self.tourApiList = try decodeJSON.decode([tourModel].self, from: responseData)
                     self.tableView.reloadData()
-                    print(self.tourApiList)
+                  
                 }catch{
                     print(error.localizedDescription)
                 }

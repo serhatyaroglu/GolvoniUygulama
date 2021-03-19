@@ -37,12 +37,14 @@ class TurEkleViewController: UIViewController {
         TurEkleListe.append(Safari)
 
     }
+    
   
     
 
 
 
 }
+
 extension TurEkleViewController:UICollectionViewDataSource,UICollectionViewDelegate,TurEkleHucreProtocol{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return TurEkleListe.count
