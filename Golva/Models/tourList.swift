@@ -11,3 +11,8 @@ class tourModel : Codable  {
     var parkourName : String?
     var fee : Int
 }
+class mainEvent: Codable {
+    var name : String?
+    var fee : Int
+    
+}

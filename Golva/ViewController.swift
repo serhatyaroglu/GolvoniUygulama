@@ -23,12 +23,17 @@ class ViewController: UIViewController{
     @IBOutlet weak var ViewTab: UIView!
     @IBOutlet weak var SliderCollectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
 //    var Contacts = [Contact]()
 //    var apiResult : ApiResult? = nil
 //    var dataList : [Contact] = [Contact]()
 //    var originalArr = [Contact]();
     var sliderList = [Modelleme]()
     var tourApiList = [tourModel]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //        let e1 = Modelleme(etkinlikAdi: "Serhat Yaroglu" , gun: "Eveli Rafting", hafta: "Cuma" , ay: "Gun" , resim: "zipline")
@@ -60,6 +65,21 @@ class ViewController: UIViewController{
             }
         }
     }
+    func callEventApi(){
+        AF.request(URL(string: "http://golvoni.com/api/tours/guide?page=0")!,method: .get,parameters: nil, headers: nil).responseJSON { (response) in
+            if let responseData = response.data{
+                do {
+                    let decodeJSON = JSONDecoder()
+                    decodeJSON.keyDecodingStrategy = .convertFromSnakeCase
+                    self.tourApiList = try decodeJSON.decode([tourModel].self, from: responseData)
+                    self.tableView.reloadData()
+                  
+                }catch{
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
 //        func getContacts() {
 //               AF.request("https://api.mocki.io/v1/a684aed1")
 //                      .validate()
@@ -76,6 +96,22 @@ class ViewController: UIViewController{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+}
+extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cells = collectionView.dequeueReusableCell(withReuseIdentifier: "cells", for: indexPath) as! EventCollectionViewCell
+        let currentApiGolva = tourApiList[indexPath.row]
+        cells.ayLbl.text = String( currentApiGolva.fee)
+        return cells
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return tourApiList.count
+    }
+    
+  
+    
+    
 }
 extension ViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

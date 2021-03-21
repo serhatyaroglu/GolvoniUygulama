@@ -129,7 +129,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="sliderCell" id="bBO-q9-vDL">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="sliderCell" id="bBO-q9-vDL" customClass="EventCollectionViewCell" customModule="Golva" customModuleProvider="target">
                                                 <rect key="frame" x="2" y="0.0" width="410" height="339"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="bottom" semanticContentAttribute="spatial" insetsLayoutMarginsFromSafeArea="NO" id="mVm-cF-6gy">
@@ -208,13 +208,12 @@
                                                 <color key="backgroundColor" red="0.78823530669999997" green="0.89019608500000003" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <size key="customSize" width="410" height="339"/>
                                                 <connections>
-                                                    <outlet property="lblay" destination="Ne0-3a-tzN" id="iRC-Kk-SUv"/>
-                                                    <outlet property="lblday" destination="6PN-13-W2C" id="5e8-1f-WAW"/>
-                                                    <outlet property="lblgün" destination="36D-m9-wUg" id="UcL-e7-icF"/>
-                                                    <outlet property="lblhafta" destination="24j-43-1xl" id="Jbt-98-CSR"/>
-                                                    <outlet property="lblrehberAd" destination="Bnd-N7-2zK" id="EEc-BF-vS2"/>
-                                                    <outlet property="lbltesisAd" destination="ADY-2U-4cp" id="MWA-CK-dxH"/>
-                                                    <outlet property="pageControl" destination="taw-ex-PZJ" id="Ydg-E0-jY1"/>
+                                                    <outlet property="RehberLbl" destination="Bnd-N7-2zK" id="RmW-1u-nnn"/>
+                                                    <outlet property="ayLbl" destination="Ne0-3a-tzN" id="D08-mV-Ewb"/>
+                                                    <outlet property="dayLbl" destination="6PN-13-W2C" id="f3P-ba-NdY"/>
+                                                    <outlet property="haftalbl" destination="24j-43-1xl" id="jiG-d6-g5v"/>
+                                                    <outlet property="istatistikDaylbl" destination="36D-m9-wUg" id="QON-dC-Y68"/>
+                                                    <outlet property="tesisLbl" destination="ADY-2U-4cp" id="Zo2-cq-CgB"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -223,6 +222,9 @@
                                         <rect key="frame" x="136.5" y="271.5" width="141" height="27.5"/>
                                         <color key="pageIndicatorTintColor" red="0.77647060160000003" green="0.77647060160000003" blue="0.77254903320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="currentPageIndicatorTintColor" systemColor="labelColor"/>
+                                        <connections>
+                                            <action selector="pageControl:" destination="lfN-Gi-vlb" eventType="valueChanged" id="KQb-zE-tjX"/>
+                                        </connections>
                                     </pageControl>
                                 </subviews>
                                 <color key="backgroundColor" red="0.77636219951199481" green="0.83324360277411136" blue="0.8850889970186947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -250,12 +252,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Anasayfa" image="rectangle.grid.2x2.fill" catalog="system" selectedImage="network" id="8nU-Pe-I5n"/>
                     <connections>
-                        <outlet property="SliderCollectionView" destination="VQQ-ha-Xkp" id="sKS-LT-gyP"/>
                         <outlet property="ViewTab" destination="Ltx-SW-4aq" id="3bn-F1-CWa"/>
+                        <outlet property="collectionView" destination="VQQ-ha-Xkp" id="s8a-Bs-TeM"/>
                         <outlet property="tableView" destination="HvE-TZ-awz" id="SSv-UD-nPG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="lfN-Gi-vlb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="431.8840579710145" y="780.80357142857144"/>
         </scene>

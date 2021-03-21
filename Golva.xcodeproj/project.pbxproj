@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7918EE4126047E7100BE3635 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7918EE4026047E7100BE3635 /* EventCollectionViewCell.swift */; };
 		7922681025C567FF000C845B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922680F25C567FF000C845B /* AppDelegate.swift */; };
 		7922681225C567FF000C845B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922681125C567FF000C845B /* SceneDelegate.swift */; };
 		7922681425C567FF000C845B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922681325C567FF000C845B /* ViewController.swift */; };
@@ -53,6 +54,7 @@
 		14D20369344E05662120A666 /* Pods_Golva.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Golva.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1554E91B66ACF219EB0C9078 /* Pods-Golva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golva.debug.xcconfig"; path = "Target Support Files/Pods-Golva/Pods-Golva.debug.xcconfig"; sourceTree = "<group>"; };
 		7544C78B51B862809DD7CC2F /* Pods-GolvaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolvaTests.debug.xcconfig"; path = "Target Support Files/Pods-GolvaTests/Pods-GolvaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7918EE4026047E7100BE3635 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
 		7922680C25C567FF000C845B /* Golva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Golva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7922680F25C567FF000C845B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7922681125C567FF000C845B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				879AFF7925D2741F0039F7DE /* istatistikViewController.swift */,
 				799789EE25D267E900A24861 /* TurEkleViewController.swift */,
 				799789F325D2680200A24861 /* TurEkleCollectionViewCell.swift */,
+				7918EE4026047E7100BE3635 /* EventCollectionViewCell.swift */,
 				7922681325C567FF000C845B /* ViewController.swift */,
 				8704DC2125C5728F0008FF34 /* DetailsTableViewCell.swift */,
 				7922681B25C56800000C845B /* Assets.xcassets */,
@@ -458,6 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7918EE4126047E7100BE3635 /* EventCollectionViewCell.swift in Sources */,
 				7922681425C567FF000C845B /* ViewController.swift in Sources */,
 				794EBB6E25C5AEB4007D9774 /* GolvaInfo.swift in Sources */,
 				8704DC2225C5728F0008FF34 /* DetailsTableViewCell.swift in Sources */,
