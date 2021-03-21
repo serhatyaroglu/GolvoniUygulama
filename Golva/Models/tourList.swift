@@ -14,5 +14,5 @@ class tourModel : Codable  {
 class mainEvent: Codable {
     var name : String?
     var fee : Int
-    
+
 }

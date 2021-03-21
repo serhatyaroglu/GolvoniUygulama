@@ -33,17 +33,20 @@ class ViewController: UIViewController{
 //    var originalArr = [Contact]();
     var sliderList = [Modelleme]()
     var tourApiList = [tourModel]()
-    
+    var istatisticListApi = [mainEvent]()
     override func viewDidLoad() {
         super.viewDidLoad()
         //        let e1 = Modelleme(etkinlikAdi: "Serhat Yaroglu" , gun: "Eveli Rafting", hafta: "Cuma" , ay: "Gun" , resim: "zipline")
         //        sliderList.append(e1)
         callTourApi()
+        callEventApi()
         self.view.layoutMargins = UIEdgeInsets.zero
         //        getContacts()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
+        collectionView.delegate = self
+        collectionView.dataSource = self
         //        for contactsSearch in [Contacts] {
         //               Contacts.append(contentsOf: contactsSearch)
         //
@@ -51,7 +54,7 @@ class ViewController: UIViewController{
     }
     
     func callTourApi(){
-        AF.request(URL(string: "http://golvoni.com/api/tours/guide?page=0")!,method: .get,parameters: nil, headers: nil).responseJSON { (response) in
+        AF.request(URL(string: "http://golvoni.com/api/tours/guide")!,method: .get,parameters: nil, headers: nil).responseJSON { (response) in
             if let responseData = response.data{
                 do {
                     let decodeJSON = JSONDecoder()
@@ -66,7 +69,7 @@ class ViewController: UIViewController{
         }
     }
     func callEventApi(){
-        AF.request(URL(string: "http://golvoni.com/api/tours/guide?page=0")!,method: .get,parameters: nil, headers: nil).responseJSON { (response) in
+        AF.request(URL(string: "http://golvoni.com/api/guide/statistic")!,method: .get,parameters: nil, headers: nil).responseJSON { (response) in
             if let responseData = response.data{
                 do {
                     let decodeJSON = JSONDecoder()
@@ -99,14 +102,14 @@ class ViewController: UIViewController{
 }
 extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cells = collectionView.dequeueReusableCell(withReuseIdentifier: "cells", for: indexPath) as! EventCollectionViewCell
-        let currentApiGolva = tourApiList[indexPath.row]
-        cells.ayLbl.text = String( currentApiGolva.fee)
-        return cells
+        let sliderCell = collectionView.dequeueReusableCell(withReuseIdentifier: "sliderCell", for: indexPath) as! EventCollectionViewCell
+        let currentApiGolvaistatistic = istatisticListApi[indexPath.row]
+        sliderCell.ayLbl.text = String( currentApiGolvaistatistic.fee)
+        sliderCell.dayLbl.text = currentApiGolvaistatistic.name
+        return sliderCell
     }
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return tourApiList.count
+        return istatisticListApi.count
     }
     
   
