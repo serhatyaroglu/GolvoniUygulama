@@ -12,7 +12,7 @@ class tourModel : Codable  {
     var fee : Int
 }
 class mainEvent: Codable {
-    var name : String?
-    var fee : Int
+    var weekCount : Int?
+    var yearCount : Int?
 
 }
