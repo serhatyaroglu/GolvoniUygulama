@@ -37,25 +37,25 @@ class TurEkleViewController: UIViewController {
         TurEkleListe.append(Safari)
 
     }
+    
   
     
 
 
 
 }
+
 extension TurEkleViewController:UICollectionViewDataSource,UICollectionViewDelegate,TurEkleHucreProtocol{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return TurEkleListe.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let tur = TurEkleListe[indexPath.row]
-        
+        let tur = TurEkleListe[indexPath.row]        
         let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "TurEkleCell", for: indexPath) as! TurEkleCollectionViewCell
         cell.TurEkleButon.text = tur.butonEtkinlikAdi
         return cell
     }
-    
     func SayfaGecis(indexPath: IndexPath) {
         let Tur = TurEkleListe[indexPath.row]
         print("\(Tur.butonEtkinlikAdi!) ")

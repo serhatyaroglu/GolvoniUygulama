@@ -15,7 +15,7 @@ struct ApiResult : Decodable {
 
 struct Response :Decodable
 {
-   
+
     let contacts:[Contact]
 }
 
@@ -24,14 +24,14 @@ struct Contact:Decodable {
     let turAdi:String
     let turSaati:String
    // let kisiSayisi:String
-    
+
     init(photo:String,turAdi:String,turSaati:String) {
         self.photo = photo
         self.turAdi = turAdi
         self.turSaati = turSaati
         //self.kisiSayisi = kisiSayisi
     }
-    
+
 }
 
 struct Meta : Decodable {

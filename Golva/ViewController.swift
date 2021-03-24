@@ -21,45 +21,31 @@ extension UIImage {
 }
 class ViewController: UIViewController{
     @IBOutlet weak var ViewTab: UIView!
-    @IBOutlet weak var SliderCollectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
-    var Contacts = [Contact]()
-    var apiResult : ApiResult? = nil
-    var dataList : [Contact] = [Contact]()
-    var originalArr = [Contact]();
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+
     var sliderList = [Modelleme]()
     var tourApiList = [tourModel]()
+    var istatisticListApi = [mainEvent]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        let e1 = Modelleme(etkinlikAdi: "Serhat Yaroglu" , gun: "Eveli Rafting", hafta: "Cuma" , ay: "Gun" , resim: "zipline")
-        //        sliderList.append(e1)
+       
         callTourApi()
+        callEventApi()
         self.view.layoutMargins = UIEdgeInsets.zero
         //        getContacts()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
-        //        for contactsSearch in [Contacts] {
-        //               Contacts.append(contentsOf: contactsSearch)
-        //
-        //        }
+        collectionView.delegate = self
+        collectionView.dataSource = self
+     
     }
     
-    func callTourApi(){
-        AF.request(URL(string: "http://golvoni.com/api/tours/guide?page=0")!,method: .get,parameters: nil, headers: nil).responseJSON { (response) in
-            if let responseData = response.data{
-                do {
-                    let decodeJSON = JSONDecoder()
-                    decodeJSON.keyDecodingStrategy = .convertFromSnakeCase
-                    self.tourApiList = try decodeJSON.decode([tourModel].self, from: responseData)
-                    self.tableView.reloadData()
-                    print(self.tourApiList)
-                }catch{
-                    print(error.localizedDescription)
-                }
-            }
-        }
-    }
+ 
 //        func getContacts() {
 //               AF.request("https://api.mocki.io/v1/a684aed1")
 //                      .validate()
@@ -77,7 +63,56 @@ class ViewController: UIViewController{
         super.didReceiveMemoryWarning()
     }
 }
+extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource{
+    
+       func callEventApi(){
+           AF.request(URL(string: "http://golvoni.com/api/guide/statistic")!,method: .get,parameters: nil, headers: nil).responseJSON { (response) in
+               if let responseData = response.data{
+                   do {
+                       let decodeJSON = JSONDecoder()
+                       decodeJSON.keyDecodingStrategy = .convertFromSnakeCase
+                    self.istatisticListApi = try decodeJSON.decode([mainEvent].self, from: responseData)
+                       self.collectionView.reloadData()
+                     
+                   }catch{
+                       print(error.localizedDescription)
+                   }
+               }
+           }
+       }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let sliderCell = collectionView.dequeueReusableCell(withReuseIdentifier: "sliderCell", for: indexPath) as! EventCollectionViewCell
+        let currentApiGolvaistatistic = istatisticListApi[indexPath.row]
+        sliderCell.ayLbl.text = String( currentApiGolvaistatistic.weekCount!)
+        sliderCell.dayLbl.text = String( currentApiGolvaistatistic.yearCount!)
+        return sliderCell
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return istatisticListApi.count
+    }
+    
+  
+    
+    
+}
 extension ViewController:UITableViewDelegate,UITableViewDataSource{
+    
+    func callTourApi(){
+        AF.request(URL(string: "http://golvoni.com/api/tours/guide")!,method: .get,parameters: nil, headers: nil).responseJSON { (response) in
+            if let responseData = response.data{
+                do {
+                    let decodeJSON = JSONDecoder()
+                    decodeJSON.keyDecodingStrategy = .convertFromSnakeCase
+                    self.tourApiList = try decodeJSON.decode([tourModel].self, from: responseData)
+                    self.tableView.reloadData()
+                  
+                }catch{
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let verticalPadding: CGFloat = 8
         let maskLayer = CALayer()
@@ -88,6 +123,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         let oldFrame = cell.contentView.frame
         cell.contentView.frame = CGRect(x: oldFrame.origin.x, y: oldFrame.origin.y, width: oldFrame.size.width + 2, height: oldFrame.size.height)
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tourApiList.count
     }
