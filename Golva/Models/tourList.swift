@@ -14,7 +14,9 @@ class tourModel : Codable  {
  //   var startDate : Int
 }
 class mainEvent: Codable {
+    var dayCount : Int?
     var weekCount : Int?
+    var monthCount : Int?
     var yearCount : Int?
 
 }
