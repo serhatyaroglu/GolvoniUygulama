@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HvE-TZ-awz">
-                                <rect key="frame" x="0.0" y="407" width="414" height="398"/>
+                                <rect key="frame" x="0.0" y="359" width="414" height="446"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="398" id="h3Z-Ft-YcA"/>
+                                    <constraint firstAttribute="height" constant="446" id="h3Z-Ft-YcA"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" alpha="0.94999999999999996" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationLevel="1" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="IWq-4O-fTY" customClass="DetailsTableViewCell" customModule="Golva">
@@ -243,8 +243,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="HvE-TZ-awz" firstAttribute="top" secondItem="Ltx-SW-4aq" secondAttribute="bottom" constant="56" id="3PA-gl-mep"/>
-                            <constraint firstItem="HvE-TZ-awz" firstAttribute="top" secondItem="Ltx-SW-4aq" secondAttribute="bottom" constant="56" id="FsG-dF-JF9"/>
+                            <constraint firstItem="HvE-TZ-awz" firstAttribute="top" secondItem="Ltx-SW-4aq" secondAttribute="bottom" constant="8" id="3PA-gl-mep"/>
+                            <constraint firstItem="HvE-TZ-awz" firstAttribute="top" secondItem="Ltx-SW-4aq" secondAttribute="bottom" constant="8" id="FsG-dF-JF9"/>
                             <constraint firstItem="Ltx-SW-4aq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HBJ-fF-6Df"/>
                             <constraint firstItem="Ltx-SW-4aq" firstAttribute="leading" secondItem="HvE-TZ-awz" secondAttribute="leading" id="KzD-Ps-GH1"/>
                             <constraint firstItem="Ltx-SW-4aq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bRu-Cp-Fb7"/>
