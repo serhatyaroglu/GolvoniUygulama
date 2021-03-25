@@ -108,7 +108,7 @@
                                                 <constraint firstItem="cfi-Ry-P4R" firstAttribute="leading" secondItem="qOL-f8-Kei" secondAttribute="leadingMargin" constant="-20" id="mK5-mZ-Ivp"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                        <color key="backgroundColor" red="0.73888939620000005" green="0.86554127930000002" blue="0.91373503209999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" red="0.99994784589999997" green="1" blue="0.99987405539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="imageLabel" destination="WBA-iV-h9U" id="IxZ-KT-zZ8"/>
@@ -635,9 +635,6 @@
         <image name="zipline" width="770" height="443"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
