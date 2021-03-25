@@ -217,11 +217,8 @@
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="taw-ex-PZJ">
-                                        <rect key="frame" x="8" y="279" width="406" height="28"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="400" id="5vO-xo-uBe"/>
-                                        </constraints>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="taw-ex-PZJ">
+                                        <rect key="frame" x="0.0" y="285" width="414" height="28"/>
                                         <color key="pageIndicatorTintColor" red="0.77647060160000003" green="0.77647060160000003" blue="0.77254903320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="currentPageIndicatorTintColor" systemColor="labelColor"/>
                                         <connections>
@@ -234,13 +231,12 @@
                                     <constraint firstItem="VQQ-ha-Xkp" firstAttribute="centerX" secondItem="Ltx-SW-4aq" secondAttribute="centerX" id="7CP-hE-hZi"/>
                                     <constraint firstAttribute="height" constant="307" id="ETQ-Pg-E8i"/>
                                     <constraint firstAttribute="width" constant="414" id="JC1-kH-r0P"/>
-                                    <constraint firstItem="taw-ex-PZJ" firstAttribute="top" secondItem="Ltx-SW-4aq" secondAttribute="top" constant="279" id="VfI-Ej-Tsd"/>
-                                    <constraint firstItem="taw-ex-PZJ" firstAttribute="top" secondItem="Ltx-SW-4aq" secondAttribute="top" constant="279" id="YWH-5D-AXB"/>
+                                    <constraint firstAttribute="bottom" secondItem="taw-ex-PZJ" secondAttribute="bottom" constant="-6" id="RM1-xJ-2xz"/>
+                                    <constraint firstItem="taw-ex-PZJ" firstAttribute="leading" secondItem="VQQ-ha-Xkp" secondAttribute="leading" id="ThW-iC-tZQ"/>
                                     <constraint firstItem="VQQ-ha-Xkp" firstAttribute="leading" secondItem="Ltx-SW-4aq" secondAttribute="leading" id="ce3-Vy-OSG"/>
                                     <constraint firstItem="VQQ-ha-Xkp" firstAttribute="centerY" secondItem="Ltx-SW-4aq" secondAttribute="centerY" id="ctO-6K-lQV"/>
                                     <constraint firstItem="VQQ-ha-Xkp" firstAttribute="top" secondItem="Ltx-SW-4aq" secondAttribute="top" id="ivY-20-woE"/>
-                                    <constraint firstItem="taw-ex-PZJ" firstAttribute="leading" secondItem="Ltx-SW-4aq" secondAttribute="leading" constant="14" id="rde-Ig-shs"/>
-                                    <constraint firstAttribute="trailing" secondItem="taw-ex-PZJ" secondAttribute="trailing" id="xPe-KY-dEe"/>
+                                    <constraint firstItem="taw-ex-PZJ" firstAttribute="trailing" secondItem="VQQ-ha-Xkp" secondAttribute="trailing" id="lel-Ti-0ow"/>
                                 </constraints>
                             </view>
                         </subviews>
