@@ -131,8 +131,9 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath ) as! DetailsTableViewCell
         let currentGolvo = tourApiList[indexPath.row]
         cell.turAdiLabel.text = currentGolvo.name
-        cell.turSaatiLabel.text = currentGolvo.parkourName
-        cell.parkurname.text = String(currentGolvo.fee)
+        cell.turSaatiLabel.text = String("11:24")
+        cell.parkurname.text = currentGolvo.parkourName
+        cell.kisiSayisiLabel.text = String( currentGolvo.totalCustomerCount)
         
         //    let currentContact = Contacts[indexPath.row]
         //    cell.turSaatiLabel?.text = currentContact.turSaati
