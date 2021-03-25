@@ -11,7 +11,7 @@ class tourModel : Codable  {
     var parkourName : String?
     var fee : Int
     var totalCustomerCount : Int
-    var startDate : Date
+ //   var startDate : Int
 }
 class mainEvent: Codable {
     var weekCount : Int?

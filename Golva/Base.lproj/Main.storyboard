@@ -49,22 +49,22 @@
                                                             <rect key="frame" x="23" y="28" width="378" height="42"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="rSV-vA-uLt">
-                                                                    <rect key="frame" x="3" y="3" width="20.5" height="19"/>
+                                                                    <rect key="frame" x="3" y="3" width="14.5" height="19"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scribble.variable" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WBA-iV-h9U">
-                                                                            <rect key="frame" x="0.0" y="-0.5" width="20.5" height="18.5"/>
+                                                                            <rect key="frame" x="0.0" y="-0.5" width="14.5" height="18.5"/>
                                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                                         </imageView>
                                                                     </subviews>
                                                                     <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                                                 </stackView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parkur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uj-je-lWI">
-                                                                    <rect key="frame" x="63.5" y="3" width="54" height="19"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parkur" lineBreakMode="tailTruncation" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uj-je-lWI">
+                                                                    <rect key="frame" x="57.5" y="3" width="60" height="19"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="54" id="Z31-uG-ICj"/>
+                                                                        <constraint firstAttribute="width" constant="60" id="Z31-uG-ICj"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -74,7 +74,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="78.5" id="5dG-bp-68K"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
