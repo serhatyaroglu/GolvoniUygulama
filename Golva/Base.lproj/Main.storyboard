@@ -166,49 +166,49 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="JVD-EL-C4e">
-                                                            <rect key="frame" x="25.5" y="26" width="363.5" height="73"/>
+                                                            <rect key="frame" x="12.5" y="26" width="389.5" height="73"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7Ch-rw-5DC">
-                                                                    <rect key="frame" x="0.0" y="26.5" width="71" height="20"/>
+                                                                    <rect key="frame" x="0.0" y="26.5" width="78" height="20"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scribble.variable" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WBA-iV-h9U">
                                                                             <rect key="frame" x="0.0" y="-0.5" width="21" height="19.5"/>
                                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parkur" lineBreakMode="tailTruncation" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uj-je-lWI">
-                                                                            <rect key="frame" x="26" y="0.0" width="45" height="20"/>
+                                                                            <rect key="frame" x="26" y="0.0" width="52" height="20"/>
                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="16"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QX1-bH-9E5">
-                                                                    <rect key="frame" x="132" y="26.5" width="106.5" height="20"/>
+                                                                    <rect key="frame" x="139" y="26.5" width="118.5" height="20"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.3.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3f7-nm-AFU">
                                                                             <rect key="frame" x="0.0" y="1.5" width="35.5" height="17"/>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kişi Sayısı" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmZ-ar-d2s">
-                                                                            <rect key="frame" x="40.5" y="0.0" width="66" height="20"/>
+                                                                            <rect key="frame" x="40.5" y="0.0" width="78" height="20"/>
                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="16"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vhO-VD-LyG">
-                                                                    <rect key="frame" x="299.5" y="24.5" width="64" height="24"/>
+                                                                    <rect key="frame" x="318.5" y="24.5" width="71" height="24"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timer" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="U6v-Up-JzP">
                                                                             <rect key="frame" x="0.0" y="1" width="20" height="23"/>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="saati" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXx-am-sFX">
-                                                                            <rect key="frame" x="25" y="0.0" width="39" height="24"/>
+                                                                            <rect key="frame" x="25" y="0.0" width="46" height="24"/>
                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
