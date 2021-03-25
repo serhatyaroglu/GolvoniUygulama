@@ -201,7 +201,7 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.81620746850967407" green="0.93018382787704468" blue="0.95132571458816528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                 </collectionViewCellContentView>
                                                 <color key="backgroundColor" red="0.78823530669999997" green="0.89019608500000003" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -218,7 +218,7 @@
                                         </cells>
                                     </collectionView>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="taw-ex-PZJ">
-                                        <rect key="frame" x="0.0" y="285" width="414" height="28"/>
+                                        <rect key="frame" x="0.0" y="285.5" width="414" height="27.5"/>
                                         <color key="pageIndicatorTintColor" red="0.77647060160000003" green="0.77647060160000003" blue="0.77254903320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="currentPageIndicatorTintColor" systemColor="labelColor"/>
                                         <connections>
@@ -241,7 +241,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.86142188324329605" green="0.92453531863514482" blue="0.98206099051321016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HvE-TZ-awz" firstAttribute="top" secondItem="Ltx-SW-4aq" secondAttribute="bottom" constant="28" id="3PA-gl-mep"/>
                             <constraint firstItem="HvE-TZ-awz" firstAttribute="top" secondItem="Ltx-SW-4aq" secondAttribute="bottom" id="FsG-dF-JF9"/>
