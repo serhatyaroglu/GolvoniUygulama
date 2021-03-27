@@ -21,6 +21,7 @@ class DetailsTableViewCell: UITableViewCell {
     @IBOutlet weak var imageLabel: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+       
         // Initialization code
     }
 
