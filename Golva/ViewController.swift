@@ -88,6 +88,10 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         let maskLayer = CALayer()
         maskLayer.cornerRadius = 12    //if you want round edges
         maskLayer.backgroundColor = UIColor.black.cgColor
+        maskLayer.shadowRadius = 22
+        maskLayer.shadowColor = UIColor.black.cgColor
+        maskLayer.shadowOffset = CGSize(width: 3, height: 20)
+        maskLayer.shadowOpacity = 22
         maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 1, dy: verticalPadding/2)
         cell.layer.mask = maskLayer
         let oldFrame = cell.contentView.frame
@@ -96,15 +100,18 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tourApiList.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath ) as! DetailsTableViewCell
         let currentGolvo = tourApiList[indexPath.row]
+        
         cell.turAdiLabel.text = currentGolvo.name
         cell.turSaatiLabel.text = String("11:24")
         cell.parkurname.text = currentGolvo.parkourName
         cell.kisiSayisiLabel.text = String( currentGolvo.totalCustomerCount)
         return cell
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
