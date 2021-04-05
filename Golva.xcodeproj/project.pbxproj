@@ -21,6 +21,9 @@
 		794EBB7325C5AF93007D9774 /* Reguest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794EBB7225C5AF93007D9774 /* Reguest.swift */; };
 		794EBB7F25C5B618007D9774 /* person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794EBB7E25C5B618007D9774 /* person.swift */; };
 		7962272925D31E8C00EC001A /* TurEkleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7962272825D31E8C00EC001A /* TurEkleModel.swift */; };
+		796B3A78261708980030451E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B3A77261708980030451E /* ProfileViewController.swift */; };
+		796B3A8026170CB10030451E /* GolvaApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B3A7F26170CB10030451E /* GolvaApiService.swift */; };
+		796B3A8526170F800030451E /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B3A8426170F800030451E /* ProfileCollectionViewCell.swift */; };
 		799789EF25D267E900A24861 /* TurEkleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799789EE25D267E900A24861 /* TurEkleViewController.swift */; };
 		799789F425D2680200A24861 /* TurEkleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799789F325D2680200A24861 /* TurEkleCollectionViewCell.swift */; };
 		79AF194C25FBF4B400A8A144 /* tourList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AF194B25FBF4B400A8A144 /* tourList.swift */; };
@@ -74,6 +77,9 @@
 		794EBB7225C5AF93007D9774 /* Reguest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reguest.swift; sourceTree = "<group>"; };
 		794EBB7E25C5B618007D9774 /* person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = person.swift; sourceTree = "<group>"; };
 		7962272825D31E8C00EC001A /* TurEkleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurEkleModel.swift; sourceTree = "<group>"; };
+		796B3A77261708980030451E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		796B3A7F26170CB10030451E /* GolvaApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolvaApiService.swift; sourceTree = "<group>"; };
+		796B3A8426170F800030451E /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		799789EE25D267E900A24861 /* TurEkleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurEkleViewController.swift; sourceTree = "<group>"; };
 		799789F325D2680200A24861 /* TurEkleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurEkleCollectionViewCell.swift; sourceTree = "<group>"; };
 		79AF194B25FBF4B400A8A144 /* tourList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tourList.swift; sourceTree = "<group>"; };
@@ -120,6 +126,7 @@
 		18593B9F5EC401BBC06FDD31 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				E90766A415E7E592D0EC5270 /* Frameworks */,
 				1554E91B66ACF219EB0C9078 /* Pods-Golva.debug.xcconfig */,
 				BDC10CCA1908AF6A9A112536 /* Pods-Golva.release.xcconfig */,
 				99928B47FBFC03C0074DDF0F /* Pods-Golva-GolvaUITests.debug.xcconfig */,
@@ -138,7 +145,6 @@
 				7922683325C56800000C845B /* GolvaUITests */,
 				7922680D25C567FF000C845B /* Products */,
 				18593B9F5EC401BBC06FDD31 /* Pods */,
-				E90766A415E7E592D0EC5270 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,18 +161,13 @@
 		7922680E25C567FF000C845B /* Golva */ = {
 			isa = PBXGroup;
 			children = (
+				796B3A762617085B0030451E /* ControllerViewCells */,
+				796B3A752617082F0030451E /* ViewControllers */,
 				79AF194725FBEF2400A8A144 /* Models */,
 				79AF194625FBEF0300A8A144 /* Services */,
 				7922680F25C567FF000C845B /* AppDelegate.swift */,
 				7922681125C567FF000C845B /* SceneDelegate.swift */,
 				7922681525C567FF000C845B /* Main.storyboard */,
-				879AFF7E25D274590039F7DE /* istatistikCollectionViewCell.swift */,
-				879AFF7925D2741F0039F7DE /* istatistikViewController.swift */,
-				799789EE25D267E900A24861 /* TurEkleViewController.swift */,
-				799789F325D2680200A24861 /* TurEkleCollectionViewCell.swift */,
-				7918EE4026047E7100BE3635 /* EventCollectionViewCell.swift */,
-				7922681325C567FF000C845B /* ViewController.swift */,
-				8704DC2125C5728F0008FF34 /* DetailsTableViewCell.swift */,
 				7922681B25C56800000C845B /* Assets.xcassets */,
 				7922681D25C56800000C845B /* LaunchScreen.storyboard */,
 				7922682025C56800000C845B /* Info.plist */,
@@ -193,6 +194,29 @@
 			path = GolvaUITests;
 			sourceTree = "<group>";
 		};
+		796B3A752617082F0030451E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7922681325C567FF000C845B /* ViewController.swift */,
+				799789EE25D267E900A24861 /* TurEkleViewController.swift */,
+				879AFF7925D2741F0039F7DE /* istatistikViewController.swift */,
+				796B3A77261708980030451E /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		796B3A762617085B0030451E /* ControllerViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				879AFF7E25D274590039F7DE /* istatistikCollectionViewCell.swift */,
+				799789F325D2680200A24861 /* TurEkleCollectionViewCell.swift */,
+				7918EE4026047E7100BE3635 /* EventCollectionViewCell.swift */,
+				8704DC2125C5728F0008FF34 /* DetailsTableViewCell.swift */,
+				796B3A8426170F800030451E /* ProfileCollectionViewCell.swift */,
+			);
+			path = ControllerViewCells;
+			sourceTree = "<group>";
+		};
 		79AF194625FBEF0300A8A144 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +233,7 @@
 				794EBB7E25C5B618007D9774 /* person.swift */,
 				7962272825D31E8C00EC001A /* TurEkleModel.swift */,
 				79AF194B25FBF4B400A8A144 /* tourList.swift */,
+				796B3A7F26170CB10030451E /* GolvaApiService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,6 +246,7 @@
 				B4CB95E2B48A0A4887EB603D /* Pods_GolvaTests.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,9 +491,11 @@
 				7922681425C567FF000C845B /* ViewController.swift in Sources */,
 				794EBB6E25C5AEB4007D9774 /* GolvaInfo.swift in Sources */,
 				8704DC2225C5728F0008FF34 /* DetailsTableViewCell.swift in Sources */,
+				796B3A8026170CB10030451E /* GolvaApiService.swift in Sources */,
 				79AF194C25FBF4B400A8A144 /* tourList.swift in Sources */,
 				879AFF7A25D2741F0039F7DE /* istatistikViewController.swift in Sources */,
 				799789F425D2680200A24861 /* TurEkleCollectionViewCell.swift in Sources */,
+				796B3A78261708980030451E /* ProfileViewController.swift in Sources */,
 				7962272925D31E8C00EC001A /* TurEkleModel.swift in Sources */,
 				879AFF7F25D274590039F7DE /* istatistikCollectionViewCell.swift in Sources */,
 				7922681025C567FF000C845B /* AppDelegate.swift in Sources */,
@@ -476,6 +504,7 @@
 				879AFF8425D31E800039F7DE /* istatistiketkinlik.swift in Sources */,
 				7922681A25C567FF000C845B /* Golva.xcdatamodeld in Sources */,
 				794EBB7F25C5B618007D9774 /* person.swift in Sources */,
+				796B3A8526170F800030451E /* ProfileCollectionViewCell.swift in Sources */,
 				794EBB7325C5AF93007D9774 /* Reguest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
