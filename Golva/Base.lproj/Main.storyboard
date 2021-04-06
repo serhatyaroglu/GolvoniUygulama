@@ -270,7 +270,7 @@
         <!--Profil-->
         <scene sceneID="6Y3-vU-aZf">
             <objects>
-                <viewController id="5T3-IA-MHg" sceneMemberID="viewController">
+                <viewController id="5T3-IA-MHg" customClass="ProfileViewController" customModule="Golva" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kLy-CY-2z6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -329,6 +329,12 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="BY8-nN-Lgr"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="pencil" catalog="system" id="5qT-3M-zDu"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="JobOrCompany" destination="Csy-uT-MAc" id="751-VM-uvX"/>
+                        <outlet property="PersonName" destination="lCn-MQ-l4h" id="SP2-Q9-Xoy"/>
+                        <outlet property="PersonPhoto" destination="59W-7G-auq" id="Jfe-2i-nfO"/>
+                        <outlet property="UIView" destination="RRp-WV-MQM" id="s4x-6G-EoE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdX-vD-BsL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
